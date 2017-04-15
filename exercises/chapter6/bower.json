@@ -16,7 +16,11 @@
   "dependencies": {
     "purescript-tuples": "^4.0.0",
     "purescript-either": "^3.0.0",
+<<<<<<< HEAD
     "purescript-strings": "^3.1.0",
+=======
+    "purescript-strings": "^3.0.0",
+>>>>>>> Code updates for 0.11.3
     "purescript-console": "^3.0.0",
     "purescript-functions": "^3.0.0"
   },

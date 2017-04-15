@@ -14,7 +14,11 @@
     "package.json"
   ],
   "dependencies": {
+<<<<<<< HEAD
     "purescript-arrays": "^4.0.1",
+=======
+    "purescript-arrays": "^4.0.0",
+>>>>>>> Code updates for 0.11.3
     "purescript-console": "^3.0.0",
     "purescript-math": "^2.0.0",
     "purescript-globals": "^3.0.0"
