@@ -1,0 +1,28 @@
+language: node_js
+dist: trusty
+sudo: required
+node_js: stable
+
+env:
+  - TEST_DIR=$HOME/exercises/chapter2/
+  - TEST_DIR=$HOME/exercises/chapter3/
+  - TEST_DIR=$HOME/exercises/chapter4/
+  - TEST_DIR=$HOME/exercises/chapter5/
+  - TEST_DIR=$HOME/exercises/chapter6/
+  - TEST_DIR=$HOME/exercises/chapter7/
+  - TEST_DIR=$HOME/exercises/chapter8/
+  - TEST_DIR=$HOME/exercises/chapter9/
+  - TEST_DIR=$HOME/exercises/chapter10/
+  - TEST_DIR=$HOME/exercises/chapter11/
+  - TEST_DIR=$HOME/exercises/chapter12/
+  - TEST_DIR=$HOME/exercises/chapter13/
+  - TEST_DIR=$HOME/exercises/chapter14/
+  
+install:
+  - npm install -g bower purescript pulp
+script:
+  - cd $TEST_DIR
+  - bower install 
+  - pulp build
+
+  
