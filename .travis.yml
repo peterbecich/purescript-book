@@ -3,20 +3,36 @@ dist: trusty
 sudo: required
 node_js: stable
 
+cache:
+  directories:
+    - ./exercises/chapter2/node_modules
+    - ./exercises/chapter3/node_modules
+    - ./exercises/chapter4/node_modules
+    - ./exercises/chapter5/node_modules
+    - ./exercises/chapter6/node_modules
+    - ./exercises/chapter7/node_modules
+    - ./exercises/chapter8/node_modules
+    - ./exercises/chapter9/node_modules
+    - ./exercises/chapter10/node_modules
+    - ./exercises/chapter11/node_modules
+    - ./exercises/chapter12/node_modules
+    - ./exercises/chapter13/node_modules
+    - ./exercises/chapter14/node_modules
+
 env:
-  - TEST_DIR=$HOME/exercises/chapter2/
-  - TEST_DIR=$HOME/exercises/chapter3/
-  - TEST_DIR=$HOME/exercises/chapter4/
-  - TEST_DIR=$HOME/exercises/chapter5/
-  - TEST_DIR=$HOME/exercises/chapter6/
-  - TEST_DIR=$HOME/exercises/chapter7/
-  - TEST_DIR=$HOME/exercises/chapter8/
-  - TEST_DIR=$HOME/exercises/chapter9/
-  - TEST_DIR=$HOME/exercises/chapter10/
-  - TEST_DIR=$HOME/exercises/chapter11/
-  - TEST_DIR=$HOME/exercises/chapter12/
-  - TEST_DIR=$HOME/exercises/chapter13/
-  - TEST_DIR=$HOME/exercises/chapter14/
+  - TEST_DIR=./exercises/chapter2/
+  - TEST_DIR=./exercises/chapter3/
+  - TEST_DIR=./exercises/chapter4/
+  - TEST_DIR=./exercises/chapter5/
+  - TEST_DIR=./exercises/chapter6/
+  - TEST_DIR=./exercises/chapter7/
+  - TEST_DIR=./exercises/chapter8/
+  - TEST_DIR=./exercises/chapter9/
+  - TEST_DIR=./exercises/chapter10/
+  - TEST_DIR=./exercises/chapter11/
+  - TEST_DIR=./exercises/chapter12/
+  - TEST_DIR=./exercises/chapter13/
+  - TEST_DIR=./exercises/chapter14/
   
 install:
   - npm install -g bower purescript pulp
