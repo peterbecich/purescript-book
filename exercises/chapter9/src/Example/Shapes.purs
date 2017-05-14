@@ -1,4 +1,5 @@
-module Example.Shapes where
+-- module Example.Shapes where
+module Main where
 
 import Prelude
 
