@@ -18,25 +18,25 @@ import Partial.Unsafe (unsafePartial)
 
 render :: forall eff. Int -> Context2D -> Eff (canvas :: CANVAS | eff) Context2D
 render count ctx = do
-  setFillStyle "#FFFFFF" ctx
+  _ <- setFillStyle "#FFFFFF" ctx
 
-  fillPath ctx $ rect ctx
+  _ <- fillPath ctx $ rect ctx
     { x: 0.0
     , y: 0.0
     , w: 600.0
     , h: 600.0
     }
 
-  setFillStyle "#00FF00" ctx
+  _ <- setFillStyle "#00FF00" ctx
 
   withContext ctx do
     let scaleX = Math.sin (toNumber count * Math.pi / 4.0) + 1.5
     let scaleY = Math.sin (toNumber count * Math.pi / 6.0) + 1.5
 
-    translate { translateX: 300.0, translateY:  300.0 } ctx
-    rotate (toNumber count * Math.pi / 18.0) ctx
-    scale { scaleX: scaleX, scaleY: scaleY } ctx
-    translate { translateX: -100.0, translateY: -100.0 } ctx
+    _ <- translate { translateX: 300.0, translateY:  300.0 } ctx
+    _ <- rotate (toNumber count * Math.pi / 18.0) ctx
+    _ <- scale { scaleX: scaleX, scaleY: scaleY } ctx
+    _ <- translate { translateX: -100.0, translateY: -100.0 } ctx
 
     fillPath ctx $ rect ctx
       { x: 0.0
@@ -56,7 +56,7 @@ main = void $ unsafePartial do
 
   clickCount <- newRef 0
 
-  render 0 ctx
+  _ <- render 0 ctx
 
   node <- querySelector "#canvas"
   for_ node $ addEventListener "click" $ void do
