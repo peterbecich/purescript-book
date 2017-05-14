@@ -71,7 +71,7 @@ addressBook = createClass $ spec initialState \ctx -> do
       renderValidationErrors [] = []
       renderValidationErrors xs =
         [ D.div [ P.className "alert alert-danger" ]
-                [ D.ul' (map renderValidationError xs) ]
+                [ D.div' (map renderValidationError xs) ]
         ]
 
       formField name hint value update =
