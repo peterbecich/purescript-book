@@ -1,6 +1,7 @@
 module Data.AddressBook where
 
 import Prelude
+import Data.Generic
 
 newtype Address = Address
   { street :: String
@@ -16,6 +17,8 @@ data PhoneType
   | WorkPhone
   | CellPhone
   | OtherPhone
+
+derive instance genericPhoneType :: Generic PhoneType
 
 newtype PhoneNumber = PhoneNumber
   { "type" :: PhoneType

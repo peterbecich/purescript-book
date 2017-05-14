@@ -1,6 +1,6 @@
--- module Example.Random where
+module Example.Random where
 
-module Main where
+-- module Main where
 
 import Prelude
 
