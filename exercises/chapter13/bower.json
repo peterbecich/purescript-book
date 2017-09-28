@@ -17,17 +17,10 @@
     "package.json"
   ],
   "dependencies": {
-<<<<<<< HEAD
     "purescript-arrays": "^4.0.1",
     "purescript-quickcheck": "^4.0.0",
     "purescript-functions": "^3.0.0",
     "purescript-lists": "^4.1.0"
-=======
-    "purescript-arrays": "^4.0.0",
-    "purescript-quickcheck": "^4.0.0",
-    "purescript-functions": "^3.0.0",
-    "purescript-lists": "^4.0.0"
->>>>>>> Code updates for 0.11.3
   },
   "devDependencies": {
     "purescript-psci-support": "^3.0.0"

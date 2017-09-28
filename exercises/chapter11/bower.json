@@ -20,13 +20,8 @@
     "purescript-maps": "^3.0.0",
     "purescript-node-readline": "^3.0.0",
     "purescript-sets": "^3.0.0",
-<<<<<<< HEAD
     "purescript-strings": "^3.1.0",
     "purescript-transformers": "^3.2.0",
-=======
-    "purescript-strings": "^3.0.0",
-    "purescript-transformers": "^3.0.0",
->>>>>>> Code updates for 0.11.3
     "purescript-yargs": "^3.0.0"
   },
   "devDependencies": {

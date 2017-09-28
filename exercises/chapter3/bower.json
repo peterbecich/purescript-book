@@ -17,11 +17,7 @@
     "package.json"
   ],
   "dependencies": {
-<<<<<<< HEAD
     "purescript-lists": "^4.1.0",
-=======
-    "purescript-lists": "^4.0.0",
->>>>>>> Code updates for 0.11.3
     "purescript-console": "^3.0.0"
   },
   "devDependencies": {
