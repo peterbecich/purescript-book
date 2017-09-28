@@ -25,6 +25,9 @@ import Partial.Unsafe (unsafePartial)
 import React (ReactClass, ReadWrite, ReactState, Event, ReactThis, ReactElement, createFactory, readState, spec, createClass, writeState)
 import ReactDOM (render)
 
+import CountThrows
+import RandomNumber
+
 newtype AppState = AppState
   { person :: Person
   , errors :: Errors
@@ -146,12 +149,11 @@ addressBook = createClass $ spec initialState \ctx -> do
                   ]
           ]
 
-main :: Eff ( console :: CONSOLE
-            , dom :: DOM
-            ) Unit
+main :: Eff ( console :: CONSOLE, dom :: DOM ) Unit
 main = void do
   log "Rendering address book component"
   let component = D.div [] [ createFactory addressBook unit ]
+  -- getRandomNumber
   doc <- window >>= document
   ctr <- getElementById (ElementId "main") (documentToNonElementParentNode (htmlDocumentToDocument doc))
   render component (unsafePartial fromJust ctr)
