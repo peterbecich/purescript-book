@@ -24,6 +24,7 @@
     "purescript-react": "^3.0.0",
     "purescript-strings": "^3.0.0",
     "purescript-validation": "^3.0.0",
-    "purescript-generics": "^4.0.0"
+    "purescript-generics": "^4.0.0",
+    "purescript-random": "^3.0.0"
   }
 }
